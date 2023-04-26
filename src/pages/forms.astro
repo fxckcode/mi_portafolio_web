@@ -1,0 +1,153 @@
+---
+import Base from "../layout/Base.astro";        
+---
+
+<Base title="MI SITIO WEB | FORMULARIOS">
+    <div class="container">
+        <div class="head">
+            <h2>AVIACA | TIQUETES</h2>
+        </div>
+        <div class="content">
+            <form action="">
+                <div class="rowForm">
+                    <label for="documentNumber">Ingrese el número de documento</label>
+                    <input type="number" name="documentNumber" id="documentNumber" placeholder="Numero de documento">
+                </div>
+                <div class="rowForm">
+                    <label for="typeDocument">Ingrese el tipo de documento</label>
+                    <select name="typeDocument" id="typeDocument">
+                        <option value="">Cedula de ciudadanía</option>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value="">Pasaporte</option>
+                        <option value="">Registro civil</option>
+                        <option value="">Cédula Extranjera</option>
+                    </select>
+                </div>
+                <div class="rowForm">
+                    <label for="claseVuelo">Por favor seleccione la clase</label>
+                    <div class="textRadio">
+                        <input type="radio" name="claseVuelo" id="claseVuelo">
+                        <label for="">Primera clase</label>
+                    </div>
+                    <div class="textRadio">
+                        <input type="radio" name="claseVuelo" id="claseVuelo">
+                        <label for="">Clase bussiness</label>
+                    </div>
+                    <div class="textRadio">
+                        <input type="radio" name="claseVuelo" id="claseVuelo">
+                        <label for="">Clase turista</label>
+                    </div>
+                </div>
+                <div class="rowForm">
+                    <label for="">Por favor, seleccione el día para visualizar los vuelos disponibles</label>
+                     <div class="textRadio">
+                        <input type="radio" name="diaVuelo" id="diaVuelo">
+                        <label for="">Miercoles, 19 de abril de 2023</label>
+                    </div>
+                    <div class="textRadio">
+                        <input type="radio" name="diaVuelo" id="diaVuelo">
+                        <label for="">Jueves, 20 de abril del 2023</label>
+                    </div>
+                    <div class="textRadio">
+                        <input type="radio" name="diaVuelo" id="diaVuelo">
+                        <label for="">Viernes, 21 de abril de 2023</label>
+                    </div>
+                    <div class="textRadio">
+                        <input type="radio" name="diaVuelo" id="diaVuelo">
+                        <label for="">Sabado, 22 de abril de 2023</label>
+                    </div>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </div>
+        <a href="/">Volver al inicio</a>
+    </div>
+</Base>
+
+<style lang="scss">
+    h2 {
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > .container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            & > .content {
+                background-color: rgba(8, 21, 49, 0.425);
+                backdrop-filter: blur(30px);
+                border-radius: 10px;
+                padding: 10px;
+                & > form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    & > .rowForm {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        & > label {
+                            text-align: center;
+                        }
+                        & > input, select {
+                            width: 200px;
+                            margin: 0 auto;
+                            padding: 5px;
+                        }
+                    }
+                    & > button {
+                        width: 100px;
+                        margin: 0 auto;
+                        background: transparent;
+                        color: white;
+                        border: 1px solid white;
+                        padding: 5px;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: white;
+                            color:black;
+                            transition: 1s all ease;
+                        }
+                    }
+                }
+            } 
+        }
+
+        & > .container > .head {
+            padding: 20px 0;
+            background-color: rgba(255, 0, 0, 0.308);
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            & > h2 {
+                text-align: center;
+            }
+        }
+    }
+    a {
+        width: 120px;
+			padding: 5px;
+  			border: 1px solid white;
+  			border-radius: 5px;
+  			margin: 10px;
+  			cursor: pointer;
+  			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  			text-decoration: none;
+  			color: white;
+  			background-color: rgba(0, 0, 0, 0.3);
+  			backdrop-filter: blur(20px);
+
+			&:hover {
+				box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  				transition: 1s all;
+  				background-color: white;
+  				color: black;
+			}
+		}
+</style>
