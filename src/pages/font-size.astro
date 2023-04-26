@@ -1,0 +1,44 @@
+---
+import Base from "../layout/Base.astro";
+---
+
+<Base title="MI SITIO WEB | TAMAÑOS DE FUENTES">
+    <h1>Titulo con tamaño de fuente 3em</h1>
+    <p class="tam-font-2em">Este es un parrafo con tamaño 2em</p> <!-- 1em = 16px | 2em = 32px -->
+    <p class="tam-font-4em">Este es un parrafo con tamaño de 4em</p> <!-- 4em = 64px -->
+    <br>
+    <a href="/">Volver al inicio</a> 
+</Base>
+
+<style>
+    h1 {
+        font-size: 3em; /* 42px */
+    }
+
+    .tam-font-2em {
+        font-size: 2em; /* 32px */
+    }
+
+    .tam-font-4em {
+        font-size: 4em; /* 64px */
+    }
+
+    a {
+		padding: 10px;
+  		border: 1px solid white;
+  		border-radius: 5px;
+  		margin: 10px;
+  		cursor: pointer;
+  		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  		text-decoration: none;
+  		color: white;
+  		background-color: rgba(0, 0, 0, 0.3);
+  		backdrop-filter: blur(20px);
+		&:hover {
+			box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  			transition: 1s all;
+  			background-color: white;
+  			color: black;
+		}
+	}
+</style>

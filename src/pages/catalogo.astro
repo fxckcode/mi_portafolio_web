@@ -1,0 +1,151 @@
+---
+import Base from "../layout/Base.astro";
+---
+
+<Base title="MI SITIO WEB | CATALOGO">
+  <h1>Catalogo</h1>
+  <div class="hero">
+    <div class="row">
+      <div class="card-catalogo">
+        <img src="./susuki_gcx.jpg" alt="Ford Raptor" />
+        <div class="text-catalogo">
+          <h2 class="nombre">Suzuki GSX R1000</h2>
+          <p class="precio">$ 96,000,000 COP</p>
+        </div>
+      </div>
+      <div class="card-catalogo">
+        <img src="./susuki_gsx_s125.jpg" alt="Chevrolet Chevy Tahoe" />
+        <div class="text-catalogo">
+          <h2 class="nombre">Susuki GSX S125</h2>
+          <p class="precio">$ 20,000,000 COP</p>
+        </div>
+      </div>
+      <div class="card-catalogo">
+        <img src="./yz125_mini-1.jpg" />
+        <div class="text-catalogo">
+          <h2 class="nombre">Yamaha YZ 125</h2>
+          <p class="precio">$ 12,700,000 COP</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-catalogo">
+        <img src="./nkd125.webp" alt="Ford Raptor" />
+        <div class="text-catalogo">
+          <h2 class="nombre">AKT NKD 125</h2>
+          <p class="precio">$ 5,300,000 COP</p>
+        </div>
+      </div>
+      <div class="card-catalogo">
+        <img src="./mt03_gris.png" alt="Chevrolet Chevy Tahoe" />
+        <div class="text-catalogo">
+          <h2 class="nombre">Yamaha MT 03</h2>
+          <p class="precio">$ 30,000,000 COP</p>
+        </div>
+      </div>
+      <div class="card-catalogo">
+        <img src="./xtz150_azul.png" />
+        <div class="text-catalogo">
+          <h2 class="nombre">XTZ 150</h2>
+          <p class="precio">$ 39,000,000 COP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="/">Volver al inicio</a>
+</Base>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+  }
+
+  body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  body > h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+
+  .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .card-catalogo {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    background: white;
+  }
+
+  .card-catalogo > .text-catalogo > * {
+    text-align: center;
+  }
+
+  .card-catalogo > .text-catalogo > h2 {
+    font-size: 2em;
+  }
+
+  .card-catalogo > .text-catalogo > p {
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 330px;
+    height: 250px;
+  }
+
+  a {
+    width: 150px;
+    text-align: center;
+  }
+  a {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+
+    &:hover {
+      box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+      transition: 1s all;
+      background-color: white;
+      color: black;
+    }
+  }
+</style>

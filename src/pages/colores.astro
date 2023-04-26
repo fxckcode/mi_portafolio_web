@@ -1,0 +1,113 @@
+---
+import Base from "../layout/Base.astro";
+---
+
+<Base title="MI SITIO WEB | COLORES">
+    <h1>Colores</h1>
+    <h2>Colores por nombres</h2>
+    <div class="colors size">
+        <div class="box-red"><h1>Color: <br> Red</h1></div>
+        <div class="box-cadetblue"><h1>Color: <br> Cadetblue</h1></div>
+        <div class="box-cornflowerblue"><h1>Color: <br> Cornflowerblue</h1></div>
+    </div>
+    <h2>Colores por código RGB</h2>
+    <div class="colors size">
+        <div class="box-brown"><h1>Color: <br> rgb(180, 132, 122)</h1></div>
+        <div class="box-yellow"><h1>Color: <br> rgb(235, 232, 28)</h1></div>
+        <div class="box-green"><h1>Color: <br> rgb(38, 186, 2)</h1></div>
+    </div>
+    <h2>Colores por su código hexadecimal</h2>
+    <div class="colors size">
+        <div class="box-whitegreen"><h1>Color: <br> #B2F8A1</h1></div>
+        <div class="box-whiteblue"><h1>Color: <br> #00C4B3</h1></div>
+        <div class="box-whitepurple"><h1>Color: <br> #B2B7DE</h1></div>
+    </div>
+
+    <a href="/">Volver al inicio</a>
+</Base>
+
+<style>
+h1 {
+    margin: 0;
+}
+
+
+a {
+    width: 10%;
+    text-align: center;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px; 
+}
+.size > div {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.size > div > h1 {
+    font-size: 20px;
+}
+
+.box-red {
+    background-color: red;    
+}
+
+.box-cadetblue {
+    background-color: cadetblue;
+}
+
+.box-cornflowerblue {
+    background-color: cornflowerblue;
+}
+
+.box-brown {
+    background-color: rgb(180, 132, 122);
+}
+
+.box-yellow {
+    background-color: rgb(235, 232, 28);
+}
+
+.box-green {
+    background-color: rgb(38, 186, 2);
+}
+
+.box-whitegreen {
+    background-color: #B2F8A1;
+}
+
+.box-whiteblue {
+    background-color: #00C4B3;
+}
+
+.box-whitepurple {
+    background-color: #B2B7DE;
+}
+
+a {
+	padding: 10px;
+  	border: 1px solid white;
+  	border-radius: 5px;
+  	margin: 10px;
+  	cursor: pointer;
+  	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  	text-decoration: none;
+  	color: white;
+  	background-color: rgba(0, 0, 0, 0.3);
+  	backdrop-filter: blur(20px);
+	&:hover {
+		box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  		transition: 1s all;
+  		background-color: white;
+  		color: black;
+	}
+}
+
+</style>

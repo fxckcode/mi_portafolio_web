@@ -1,0 +1,54 @@
+---
+import Base from "../layout/Base.astro";
+---
+
+<Base title="MI SITIO WEB | FUENTES">
+    <div class="container">
+        <h2 class="font-xl">Este es un titulo con una tamaño de letra grande</h2>
+        <h2 class="font-bold">Este es un titulo en negrita</h2>
+        <h2 class="font-italic">Este es un titulo con el estilo italica</h2>
+        <h2 class="font-custom">Este es un titulo con una fuente personalizada de google fonts</h2>
+        <br>
+        <a href="/">Volver al inicio</a>
+    </div>
+</Base>
+
+<style lang="scss">
+    h2 {
+        margin: 0;
+    }
+    .font-xl {
+        font-size: 100px; /* Tamaño de la fuente */
+    }
+
+    .font-bold {
+        font-weight: 900;/* Grosor de la fuente */
+    }
+
+    .font-italic {
+        font-style: italic; /* Estilos de fuente */
+    }
+
+    .font-custom {
+        font-family: 'Shantell Sans', cursive; /* Fuentes personalizadas */
+    }
+    
+    a {
+		padding: 10px;
+  		border: 1px solid white;
+  		border-radius: 5px;
+  		margin: 10px;
+  		cursor: pointer;
+  		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  		text-decoration: none;
+  		color: white;
+  		background-color: rgba(0, 0, 0, 0.3);
+  		backdrop-filter: blur(20px);
+		&:hover {
+			box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  			transition: 1s all;
+  			background-color: white;
+  			color: black;
+		}
+	}
+</style>
